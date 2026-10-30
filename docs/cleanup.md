@@ -32,5 +32,6 @@ az cognitiveservices account purge \
 | Memory stores (M6, M15) | Run the lab's cleanup cell or `project.beta.memory_stores.delete(name)` |
 
 !!! warning "Fine-tuned deployments"
-    A deployed fine-tuned model is billed **per hour while deployed**, even if you don't call it. Always delete
-    `ticket-triage-student` when you're done with M14.
+    M14 uses the **DeveloperTier** SKU, which has no hosting fee and is removed automatically after 24 hours. If
+    you redeploy a fine-tuned model on **Standard** or **GlobalStandard**, it's billed **per hour while deployed**,
+    even if you don't call it. Delete it when you're done.

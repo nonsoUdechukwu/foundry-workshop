@@ -41,7 +41,7 @@ load_dotenv(find_dotenv(usecwd=True), override=True)
 ENDPOINT = os.environ["FOUNDRY_PROJECT_ENDPOINT"]
 TEACHER = os.environ["FOUNDRY_MODEL_NAME"]
 STUDENT_BASE = "gpt-4.1-nano-2025-04-14"
-WAIT_FOR_TRAINING = os.getenv("M14_WAIT_FOR_TRAINING", "false").lower() == "true"
+WAIT_FOR_TRAINING = os.getenv("M14_WAIT_FOR_TRAINING", "false").lower() == "true"  # or set to True
 
 credential = DefaultAzureCredential()
 project = AIProjectClient(endpoint=ENDPOINT, credential=credential)
@@ -173,7 +173,7 @@ if WAIT_FOR_TRAINING:
         print(" ·", event.message)
 else:
     job = client.fine_tuning.jobs.retrieve(job.id)
-    print("Status:", job.status, "— skipping the wait. Set WAIT_FOR_TRAINING = True to continue.")
+    print("Status:", job.status, "— skipping the wait. Set WAIT_FOR_TRAINING = True (top of the notebook) to continue.")
 print("Fine-tuned model:", fine_tuned_model)
 
 # %% [markdown]
