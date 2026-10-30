@@ -1,0 +1,10 @@
+line-length = 120
+target-version = "py310"
+
+[lint]
+select = ["E", "F", "I", "B", "SIM", "UP", "PLE"]
+ignore = ["E501", "B905", "SIM105"]
+
+[lint.per-file-ignores]
+# Labs are notebooks: top-level await is valid in Jupyter.
+"labs/*.py" = ["F704", "PLE1142", "E402"]

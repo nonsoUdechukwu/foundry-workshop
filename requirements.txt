@@ -1,0 +1,15 @@
+# Lab runtime — versions verified together on 2026-10-30.
+# agent-framework-foundry 1.15 requires azure-ai-projects <2.8, so we pin 2.7.x.
+azure-ai-projects==2.7.0
+azure-identity>=1.27.0
+openai>=3.41.0,<4
+agent-framework==1.23.0
+azure-ai-evaluation==1.18.10
+azure-monitor-opentelemetry>=1.8.11
+azure-monitor-query>=1.4
+azure-search-documents>=12.0.0
+azure-ai-textanalytics>=5.3.0
+azure-mgmt-cognitiveservices>=14.0.0
+python-dotenv>=1.0.1
+pydantic>=2.8
+ipykernel>=6.29

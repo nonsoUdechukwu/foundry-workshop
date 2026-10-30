@@ -1,0 +1,13 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+site/
+.ipynb_checkpoints/
+.azure/
+.DS_Store
+*.egg-info/
+.ruff_cache/
+m14-data/
+.executed/
+.cache/

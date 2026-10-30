@@ -1,0 +1,30 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - name: Install tools
+        run: pip install jupytext==1.19.6 nbformat==5.11.1 ruff==0.17.3 -r requirements-docs.txt
+      - name: Lint labs
+        run: ruff check labs scripts
+      - name: Notebooks match labs/
+        run: python scripts/build_notebooks.py --check
+      - name: Compile Bicep
+        run: az bicep build --file infra/main.bicep --stdout > /dev/null
+      - name: Build site
+        run: mkdocs build --strict

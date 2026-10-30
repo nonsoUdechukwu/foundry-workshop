@@ -1,0 +1,100 @@
+site_name: Microsoft Foundry Hands-on Workshop
+site_description: Build, ground, evaluate, secure and observe AI agents on Microsoft Foundry — hands-on, notebook-driven labs.
+site_author: Nonso Udechukwu
+site_url: https://nonsoudechukwu.github.io/foundry-workshop/
+repo_url: https://github.com/nonsoUdechukwu/foundry-workshop
+repo_name: nonsoUdechukwu/foundry-workshop
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Nonso Udechukwu — MIT licensed
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      ignore_h1_titles: false
+      include_requirejs: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Concepts: concepts.md
+  - Platform primer:
+      - What is Foundry: platform/01-what-is-foundry.md
+      - Architecture & projects: platform/02-architecture-and-projects.md
+      - Control plane & governance: platform/03-control-plane-and-governance.md
+  - Labs:
+      - M1 · First inference: modules/01-first-inference.ipynb
+      - M2 · Your first agent: modules/02-your-first-agent.ipynb
+      - M3 · Tools & function calling: modules/03-tools-and-function-calling.ipynb
+      - M4 · Grounding with Azure AI Search: modules/04-grounding-rag.ipynb
+      - M5 · MCP tools: modules/05-mcp-tools.ipynb
+      - M6 · Agent memory: modules/06-agent-memory.ipynb
+      - M7 · Multi-agent orchestration: modules/07-multi-agent-orchestration.ipynb
+      - M8 · Deep research: modules/08-deep-research.ipynb
+      - M9 · Evaluation: modules/09-evaluation.ipynb
+      - M10 · Observability & tracing: modules/10-observability-tracing.ipynb
+      - M11 · Guardrails: modules/11-guardrails.ipynb
+      - M12 · Red teaming: modules/12-red-teaming.ipynb
+      - M13 · Human-in-the-loop & REST: modules/13-human-in-the-loop-and-rest.ipynb
+      - M14 · Fine-tuning & distillation: modules/14-fine-tuning-distillation.ipynb
+      - M15 · Capstone: modules/15-capstone.ipynb
+  - Run the workshop:
+      - Facilitator guide: facilitator-guide.md
+      - Troubleshooting: troubleshooting.md
+      - Cleanup: cleanup.md

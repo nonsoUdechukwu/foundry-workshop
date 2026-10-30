@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: foundry-workshop
+metadata:
+  template: foundry-workshop@1.0.0
+infra:
+  provider: bicep
+  path: infra
+  module: main
+hooks:
+  postprovision:
+    posix:
+      shell: sh
+      run: azd env get-values > .env && echo "Wrote .env for the notebooks"
+    windows:
+      shell: pwsh
+      run: azd env get-values | Out-File -Encoding utf8 .env; Write-Host "Wrote .env for the notebooks"
