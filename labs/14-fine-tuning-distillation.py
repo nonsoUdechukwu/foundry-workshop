@@ -224,8 +224,10 @@ else:
     print("No fine-tuned model yet — come back when the job has succeeded.")
 
 # %% [markdown]
-# > **Expected output (after training):** the student matches the teacher on most held-out tickets — with a
-# > one-line prompt and a much smaller model. Use the M9 evaluation tools for a more rigorous comparison.
+# > **Expected output (after training):** a match count and the prompt lengths. With this tiny dataset and a
+# > single epoch, expect the student to match only some tickets exactly (our test run: 3/12, often differing in
+# > one field). More examples and more epochs close the gap. That's the 🧪 exercise below. Use the M9
+# > evaluation tools for a field-by-field comparison.
 #
 # ## 9. Clean up
 #
