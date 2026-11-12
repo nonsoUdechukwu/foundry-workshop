@@ -1,10 +1,7 @@
 # 8-week course
 
-This is how I'm running the workshop with my community: one session each weekend for eight weekends. We do two
-labs a session and finish with the capstone, where everyone puts what they've built together into one agent.
-
-If you want to run it with your own group, feel free to use this plan as it is or adapt it. The lab numbers
-(M1–M15) are the same as everywhere else on the site.
+A guide for running the workshop over eight weekends: two labs per session, finishing with the capstone in
+week 8. Use it as it is or adapt it for your group. Lab numbers (M1–M15) match the rest of the site.
 
 | Week | Theme | Labs | Start this first (runs in the background) |
 |---|---|---|---|
