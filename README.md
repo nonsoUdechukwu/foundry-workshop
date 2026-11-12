@@ -12,16 +12,21 @@ Microsoft Agent Framework).
 
 ## What you'll build
 
-| # | Lab | # | Lab |
-|---|---|---|---|
-| 1 | First inference | 9 | Evaluation |
-| 2 | Your first agent | 10 | Observability & tracing |
-| 3 | Tools & function calling | 11 | Guardrails |
-| 4 | Grounding with Azure AI Search | 12 | Red teaming |
-| 5 | MCP tools | 13 | Human-in-the-loop & REST |
-| 6 | Agent memory | 14 | Fine-tuning & distillation |
-| 7 | Multi-agent orchestration | 15 | Capstone: ship a governed agent |
-| 8 | Deep research | | |
+Run it at your own pace, or as an **8-week course** with two labs per session:
+
+| Week | Theme | Labs |
+|---|---|---|
+| 1 | Foundations | 1 · First inference, 2 · Your first agent |
+| 2 | Tools & knowledge | 3 · Tools & function calling, 4 · Grounding with Azure AI Search |
+| 3 | Connect & remember | 5 · MCP tools, 6 · Agent memory |
+| 4 | Multi-agent | 7 · Multi-agent orchestration, 8 · Deep research |
+| 5 | Measure | 9 · Evaluation, 10 · Observability & tracing |
+| 6 | Protect | 11 · Guardrails, 12 · Red teaming |
+| 7 | Production | 13 · Human-in-the-loop & REST, 14 · Fine-tuning & distillation |
+| 8 | Capstone | 15 · Capstone: ship a governed agent |
+
+See the [8-week course plan](https://nonsoudechukwu.github.io/foundry-workshop/eight-week-course/) for pre-reads,
+homework and tips on keeping environments between sessions.
 
 ## Quick start
 

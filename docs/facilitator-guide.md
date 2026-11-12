@@ -28,6 +28,11 @@ they don't overwrite each other's agents. The M4 index and M11 guardrail policy 
 
 ## Suggested formats
 
+=== "8 weeks"
+
+    Two labs per weekly session, ending with the capstone in week 8. See the
+    [8-week course](eight-week-course.md) for the week-by-week plan, pre-reads and homework.
+
 === "Intro session"
 
     Platform primer → **M1** → **M2** → **M3** → **M4**. Demo M9 and M11 from a pre-run notebook.

@@ -79,22 +79,31 @@ nav:
       - Architecture & projects: platform/02-architecture-and-projects.md
       - Control plane & governance: platform/03-control-plane-and-governance.md
   - Labs:
-      - M1 · First inference: modules/01-first-inference.ipynb
-      - M2 · Your first agent: modules/02-your-first-agent.ipynb
-      - M3 · Tools & function calling: modules/03-tools-and-function-calling.ipynb
-      - M4 · Grounding with Azure AI Search: modules/04-grounding-rag.ipynb
-      - M5 · MCP tools: modules/05-mcp-tools.ipynb
-      - M6 · Agent memory: modules/06-agent-memory.ipynb
-      - M7 · Multi-agent orchestration: modules/07-multi-agent-orchestration.ipynb
-      - M8 · Deep research: modules/08-deep-research.ipynb
-      - M9 · Evaluation: modules/09-evaluation.ipynb
-      - M10 · Observability & tracing: modules/10-observability-tracing.ipynb
-      - M11 · Guardrails: modules/11-guardrails.ipynb
-      - M12 · Red teaming: modules/12-red-teaming.ipynb
-      - M13 · Human-in-the-loop & REST: modules/13-human-in-the-loop-and-rest.ipynb
-      - M14 · Fine-tuning & distillation: modules/14-fine-tuning-distillation.ipynb
-      - M15 · Capstone: modules/15-capstone.ipynb
+      - Week 1 · Foundations:
+          - M1 · First inference: modules/01-first-inference.ipynb
+          - M2 · Your first agent: modules/02-your-first-agent.ipynb
+      - Week 2 · Tools & knowledge:
+          - M3 · Tools & function calling: modules/03-tools-and-function-calling.ipynb
+          - M4 · Grounding with Azure AI Search: modules/04-grounding-rag.ipynb
+      - Week 3 · Connect & remember:
+          - M5 · MCP tools: modules/05-mcp-tools.ipynb
+          - M6 · Agent memory: modules/06-agent-memory.ipynb
+      - Week 4 · Multi-agent:
+          - M7 · Multi-agent orchestration: modules/07-multi-agent-orchestration.ipynb
+          - M8 · Deep research: modules/08-deep-research.ipynb
+      - Week 5 · Measure:
+          - M9 · Evaluation: modules/09-evaluation.ipynb
+          - M10 · Observability & tracing: modules/10-observability-tracing.ipynb
+      - Week 6 · Protect:
+          - M11 · Guardrails: modules/11-guardrails.ipynb
+          - M12 · Red teaming: modules/12-red-teaming.ipynb
+      - Week 7 · Production:
+          - M13 · Human-in-the-loop & REST: modules/13-human-in-the-loop-and-rest.ipynb
+          - M14 · Fine-tuning & distillation: modules/14-fine-tuning-distillation.ipynb
+      - Week 8 · Capstone:
+          - M15 · Capstone: modules/15-capstone.ipynb
   - Run the workshop:
+      - 8-week course: eight-week-course.md
       - Facilitator guide: facilitator-guide.md
       - Troubleshooting: troubleshooting.md
       - Cleanup: cleanup.md
