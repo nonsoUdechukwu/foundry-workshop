@@ -1,8 +1,10 @@
 # 8-week course
 
-The 15 labs pair up naturally into **eight weekly sessions**, which suits community programmes that meet on
-weekends. Each week builds on the last and ends with a capstone in week 8. The labs keep their M1–M15 numbers,
-so the rest of the site still applies.
+This is how I'm running the workshop with my community: one session each weekend for eight weekends. We do two
+labs a session and finish with the capstone, where everyone puts what they've built together into one agent.
+
+If you want to run it with your own group, feel free to use this plan as it is or adapt it. The lab numbers
+(M1–M15) are the same as everywhere else on the site.
 
 | Week | Theme | Labs | Start this first (runs in the background) |
 |---|---|---|---|
