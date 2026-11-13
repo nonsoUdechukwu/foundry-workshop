@@ -4,6 +4,10 @@
 # **Goal:** make a small, cheap model behave like a big one *for your task*. You'll use a strong **teacher**
 # model to label data, fine-tune a small **student** (`gpt-4.1-nano`) on those labels, deploy it and compare.
 #
+# The student is a GPT-4.1 model because GPT-5 models don't support supervised fine-tuning yet. `gpt-4.1-nano` is
+# the smallest OpenAI model that does. See the
+# [supported models](https://learn.microsoft.com/azure/foundry/fine-tuning/overview#supported-models) list.
+#
 # ```mermaid
 # flowchart LR
 #   S[Synthetic tickets] --> T[Teacher<br/>gpt-5.4-mini + long prompt]

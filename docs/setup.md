@@ -53,8 +53,8 @@ When it finishes, a hook writes all settings to **`.env`** in the repo root. Eve
 
 !!! note "Supported regions"
     The template allows `swedencentral` (default, recommended), `eastus2`, `northcentralus`, `westus3`,
-    `francecentral` and `australiaeast`. M14 fine-tunes `gpt-4.1-nano`; check
-    [fine-tuning availability](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models#fine-tuning-models)
+    `francecentral` and `australiaeast`. M14 fine-tunes `gpt-4.1-nano` (GPT-5 models don't support supervised
+    fine-tuning yet), so check [fine-tuning availability](https://learn.microsoft.com/azure/foundry/fine-tuning/overview#supported-models)
     if you pick a region other than Sweden Central.
 
 !!! warning "Azure AI Search capacity"
